@@ -7,13 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Group extends Model
 {
     //
-    public function position()
+    public function positions()
     {
-        return $this->belongsTo('App/Position');
+        return $this->hasMany('App/Position');
     }
 
-    public function types()
-    {
-        return $this->hasMany('App/Types');
-    }
+
+
 }

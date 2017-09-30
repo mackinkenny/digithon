@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Position extends Model
 {
     //
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('App/User');
+        return $this->hasMany('App/User');
     }
 
     public function group()

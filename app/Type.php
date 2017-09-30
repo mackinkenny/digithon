@@ -7,13 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Type extends Model
 {
     //
-    public function group()
-    {
-        return $this->belongsTo('App/Group');
-    }
-    public function Doctype()
+
+    public function doctype()
     {
         return $this->belongsTo('App/Doctype');
     }
 
+    public function docs()
+    {
+        return $this->hasMany('App/Doc');
+    }
 }

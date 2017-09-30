@@ -11,4 +11,5 @@ class Doctype extends Model
     {
         return $this->hasOne('App/Type');
     }
+
 }
