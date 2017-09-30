@@ -64,6 +64,11 @@
                                         </form>
                                     </li>
                                 </ul>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('settings') }}">Настройки</a>
+                                    </li>
+                                </ul>
                             </li>
                         @endguest
                     </ul>
@@ -76,5 +81,6 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>

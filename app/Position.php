@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Position extends Model
 {
     //
-    public function user()
+    public function users()
     {
-        return $this->belongsTo('App/User');
+        return $this->hasMany('App/Users');
     }
 
     public function group()
     {
-        return $this->hasOne('App/Group');
+        return $this->belongsTo('App/Group');
     }
 }

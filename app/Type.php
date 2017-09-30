@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Type extends Model
 {
+    //Тип документов (Приказ, Заявки)
     //
     public function group()
     {

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Group;
+use App\Position;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,5 +26,11 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+
+    public function settings()
+    {
+        $groups = Group::all();
+        return view('layoutspages.setting',['groups'=>$groups]);
     }
 }

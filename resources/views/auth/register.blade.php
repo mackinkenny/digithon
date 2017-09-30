@@ -39,25 +39,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('pos_id') ? ' has-error' : '' }}">
-                            <label for="pos_id" class="col-md-4 control-label">Position</label>
-
-                            <div class="col-md-6">
-                                <select name="center_id">
-                                    @foreach($positions as $position)
-
-                                        <option value="{{ $position->id }}">{{ $position->name }}</option>
-
-                                    @endforeach
-                                </select>
-
-                                @if ($errors->has('pos_id'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('pos_id') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>

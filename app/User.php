@@ -29,7 +29,7 @@ class User extends Authenticatable
 
     public function position()
     {
-        return $this->hasOne('App/Position');
+        return $this->belongsTo('App/Position');
     }
 
 }

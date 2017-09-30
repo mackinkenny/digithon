@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Group extends Model
 {
     //
-    public function position()
+    public function positions()
     {
-        return $this->belongsTo('App/Position');
+        return $this->HasMany('App/Positions');
     }
 
     public function types()
