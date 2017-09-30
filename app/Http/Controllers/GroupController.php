@@ -11,7 +11,7 @@ class GroupController extends Controller
 
     public function posfind(Request $request)
     {
-        $positions = Position::all()->where('group_id', '=', $request->group_id);
+        $positions = Position::all('id','name')->where('group_positions', '=', $request->group_id);
 
         return response()->json(['positions' => $positions]);
     }

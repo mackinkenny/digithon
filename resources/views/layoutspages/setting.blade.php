@@ -18,7 +18,7 @@
 
                             <br>
 
-                            <select name="groups">
+                            <select name="groups" id="groups">
                                 @foreach($groups as $group)
 
                                     <option id="groupid" value="{{ $group->id }}">{{ $group->name }}</option>

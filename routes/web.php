@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/settings','HomeController@settings')->name('settings');
 Route::post('/update', 'UserController@update')->name('update');
-Route::get('/posfind','GroupsController@posfind')->name('posfind');
+Route::get('/posfind','GroupController@posfind')->name('posfind');
